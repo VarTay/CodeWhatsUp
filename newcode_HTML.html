@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Inclusion des polices Google et des feuilles de style -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsup? : Messagerie </title>
+    <link rel="stylesheet" href="newcode_CSS.css">
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    
+    <header>
+        <h2 class="logo">Whatsup?</h2>
+        <nav class="navigation">
+                <a href="#">Accueil</a>
+                <a href="#">Informations</a>
+                <button class="btnLogin-popup">Se connecter</button>
+        </nav>
+
+        <nav class="connexion">
+                <a href="#">Discussions</a>
+                <a href="#">Paramètres</a>
+                <a href="#">Profil</a>
+                <button class="btnLogout-popup">Déconnexion</button>
+        </nav>
+
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+            </span>
+
+        <div class="form-box login">
+            <h2>Se connecter</h2>
+            <form action="#">
+                <div class ="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nom d'utilisateur</label>
+                </div>
+                <div class ="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Mot de passe</label>
+                </div>
+                    <button type="submit" class="btn">Se connecter</button>
+                <div class="login-register">
+                    <p>Vous n'avez pas de compte ? <a href="javascript:void(0);" class="register-link">S'inscrire</a></p>
+                </div> 
+            
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>S'inscrire</h2>
+            <form action="#">
+                <div class ="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="mail" required>
+                    <label>Email</label>
+                </div>
+                <div class ="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nom d'utilisateur</label>
+                </div>
+                <div class ="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required> 
+                        <label>Mot de passe</label>
+                </div>
+                    <button type="submit" class="btn">Je m'inscris !</button>
+                <div class="login-register">
+                    <p>Vous avez déjà un compte ? <a href="javascript:void(0);" class="login-link">Se connecter</a></p>
+            
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="newcode_js.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html
